@@ -301,7 +301,9 @@ textarea {
 }
 
 @keyframes spin {
-  to { transform: rotate(360deg); }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @media (max-width: 900px) {
@@ -312,9 +314,5 @@ textarea {
 
   .info-row {
     flex-direction: column;
-  }
-
-  .page-container {
-    padding-top: 320px;
   }
 }

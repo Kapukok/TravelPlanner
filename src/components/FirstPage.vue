@@ -77,7 +77,7 @@ export default defineComponent({
       isLoading.value = true;
 
       try {
-        const response = await fetch('http://localhost:8000/api/generate_plan', {
+        const response = await fetch('https://kapu.pythonanywhere.com/api/generate_plan', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -175,7 +175,8 @@ export default defineComponent({
                 @click.prevent="handleSubmit"
                 :disabled="isLoading"
             >
-              <svg v-if="!isLoading" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <svg v-if="!isLoading" width="24" height="24" viewBox="0 0 24 24"
+                   fill="none">
                 <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="white"
                       stroke-width="2" stroke-linecap="round"
                       stroke-linejoin="round" />
