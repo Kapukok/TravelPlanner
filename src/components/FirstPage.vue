@@ -77,7 +77,7 @@ export default defineComponent({
       isLoading.value = true;
 
       try {
-        const response = await fetch('https://kapu.pythonanywhere.com/api/generate_plan', {
+        const response = await fetch('https://localhost:8000/api/generate_plan', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
